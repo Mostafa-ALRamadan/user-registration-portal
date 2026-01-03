@@ -1,0 +1,19 @@
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--toggle-border-color);
+  background-color: var(--form-background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--toggle-hover-background);
+  border-color: var(--toggle-hover-border);
+}

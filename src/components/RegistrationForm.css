@@ -1,0 +1,127 @@
+.form-container {
+  background-color: var(--form-background-color);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+  margin: 2rem auto;
+  border: 1px solid var(--input-border-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* For password toggle */
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--label-color);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+  color: #a0aec0;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 0 3px var(--input-focus-shadow-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.terms-group {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.terms-group input {
+  width: auto;
+  margin-right: 0.75rem;
+  accent-color: var(--button-background-color);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+button[type="submit"]:disabled {
+  background-color: var(--button-disabled-background-color);
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
+  color: var(--success-color);
+  background-color: var(--success-background-color);
+  border: 1px solid var(--success-border-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.success-message h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--success-color);
+}
+
+.password-toggle {
+  position: absolute;
+  top: 40px; /* Adjust based on label */
+  right: 15px;
+  background: none;
+  border: none;
+  color: var(--label-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+}

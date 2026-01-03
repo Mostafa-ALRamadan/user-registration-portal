@@ -1,0 +1,76 @@
+:root, html[data-theme='light'] {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --background-color: #f0f2f5;
+  --form-background-color: #ffffff;
+  --text-color: #213547;
+  --label-color: #4a5568;
+  --input-background-color: #f7fafc;
+  --input-text-color: #2d3748;
+  --input-border-color: #cbd5e0;
+  --input-focus-border-color: #4299e1;
+  --input-focus-shadow-color: rgba(66, 153, 225, 0.5);
+  --button-background-color: #4299e1;
+  --button-hover-background-color: #3182ce;
+  --button-disabled-background-color: #a0aec0;
+  --button-text-color: #ffffff;
+  --error-color: #e53e3e;
+  --success-color: #2f855a;
+  --success-background-color: #f0fff4;
+  --success-border-color: #9ae6b4;
+  --toggle-border-color: #cbd5e0;
+  --toggle-hover-background: #e2e8f0;
+  --toggle-hover-border: #a0aec0;
+}
+
+html[data-theme='dark'] {
+  --background-color: #1a202c;
+  --form-background-color: #2d3748;
+  --text-color: #f7fafc;
+  --label-color: #a0aec0;
+  --input-background-color: #1a202c;
+  --input-text-color: #f7fafc;
+  --input-border-color: #4a5568;
+  --input-focus-border-color: #63b3ed;
+  --input-focus-shadow-color: rgba(99, 179, 237, 0.5);
+  --button-background-color: #63b3ed;
+  --button-hover-background-color: #4299e1;
+  --button-disabled-background-color: #4a5568;
+  --error-color: #fc8181;
+  --success-color: #68d391;
+  --success-background-color: #2f4238;
+  --success-border-color: #48bb78;
+  --toggle-border-color: #4a5568;
+  --toggle-hover-background: #4a5568;
+  --toggle-hover-border: #63b3ed;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
