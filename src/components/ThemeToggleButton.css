@@ -17,3 +17,12 @@
   background-color: var(--toggle-hover-background);
   border-color: var(--toggle-hover-border);
 }
+
+@media (max-width: 768px) {
+  .theme-toggle-button {
+    top: 10px;
+    right: 10px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
